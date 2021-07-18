@@ -1,7 +1,6 @@
 from flask import Flask, render_template, url_for, request
 import numpy as np
 import pandas as pd
-import jsonify
 from sklearn.preprocessing import RobustScaler
 import pickle
 
@@ -118,7 +117,7 @@ def predict():
             RightHand_Drive= 1
         else:
             RightHand_Drive= 0
-            
+
         scalar.fit_transform([[Levy, Mileage, Cylinders, Airbags]])
         prediction = model.predict([[Year, Hatchback, Jeep, Minivan, Sedan, Leather_Yes, Diesel, Hybrid, LPG, Petrol, Turbo, Gear_Manual,
          Gear_Tiptronic, Gear_Variator, Front_Wheel, Rear_Wheel, RightHand_Drive, Levy, Mileage, Cylinders, Airbags]])
