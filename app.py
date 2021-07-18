@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import RobustScaler
 import pickle
+import jsonify
 
 model = pickle.load(open('random_forest_model.pkl', 'rb'))
 app = Flask(__name__)
