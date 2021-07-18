@@ -1,7 +1,6 @@
 Flask==2.0.1
 gunicorn==20.1.0
-itsdangerous==1.1.0
-Jinja2==2.10.1
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 Werkzeug>=2.0.1
 numpy>=1.20.3
@@ -10,3 +9,13 @@ scikit-learn==0.23.1
 matplotlib>=3.4.2
 pandas>=1.2.4
 jsonify==0.5
+certifi==2021.5.30
+chardet==4.0.0
+click==7.1.2
+idna==2.10
+itsdangerous==2.0.1
+joblib==1.0.0
+requests==2.25.1
+threadpoolctl==2.1.0
+urllib3==1.26.6
+wincertstore==0.2
